@@ -1,0 +1,69 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Kosugi Maru', sans-serif; 
+    font-size: 48px; 
+    font-weight: bold;
+    color: #000000;
+}
+
+button {
+    background-color: #FF6F00; /* オレンジ */
+    color: white;              /* 白文字で見やすく */
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF6F00;
+}
+
+#genreList {
+    margin-top: 20px;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+#genreList.show {
+    max-height: 500px; /* 十分に大きな数値 */
+    opacity: 1;
+}
+
+#genreList ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#genreList li {
+    margin: 10px 0;
+}
+
+#genreList a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #FF6F00;
+}
+
+#genreList a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
